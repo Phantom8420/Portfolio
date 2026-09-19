@@ -29,9 +29,9 @@ export default async function Home() {
               aria-hidden
               className="pointer-events-none absolute -top-1 left-1 text-transparent [-webkit-text-stroke:1px_var(--border)] select-none"
             >
-              specter842
+              phantom842
             </span>
-            <span className="relative">specter842</span>
+            <span className="relative">phantom842</span>
           </h1>
           <p className="mt-4 max-w-md text-muted-foreground">
             Computational Systems Engineer — AI/ML, robotics, cybersecurity, finance, blockchain,

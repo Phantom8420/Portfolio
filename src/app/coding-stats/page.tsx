@@ -9,7 +9,7 @@ import { PieChart } from "@/components/pie-chart";
 import { ContributionHeatmap } from "@/components/contribution-heatmap";
 
 export const metadata: Metadata = {
-  title: "Coding Stats | Specter842",
+  title: "Coding Stats | Phantom842",
 };
 
 // Live stats -- render fresh on every request instead of a static snapshot.
@@ -50,7 +50,7 @@ export default async function CodingStatsPage() {
             rel="noreferrer"
             className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground"
           >
-            <GithubIcon className="size-3.5" /> @Specter842
+            <GithubIcon className="size-3.5" /> @Phantom8420
           </a>
         </div>
         {live && live.languages.length > 0 && (

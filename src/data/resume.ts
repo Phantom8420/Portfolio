@@ -1,5 +1,5 @@
 export const resumeProfile = {
-  name: "Specter842",
+  name: "Phantom842",
   title: "Student | Computational Systems Engineer",
 };
 

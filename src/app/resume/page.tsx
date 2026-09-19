@@ -10,7 +10,7 @@ import {
 import { cardSurface, cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Resume | Specter842",
+  title: "Resume | Phantom842",
 };
 
 export default function ResumePage() {
