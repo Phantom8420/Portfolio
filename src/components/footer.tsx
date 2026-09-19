@@ -33,7 +33,7 @@ export function Footer() {
           </a>
         </div>
         <div className="flex flex-col items-center justify-between gap-4 text-xs text-muted-foreground sm:flex-row sm:text-sm">
-          <p>© 2026 specter842. All rights reserved.</p>
+          <p>© 2026 phantom842. All rights reserved.</p>
           <div className="flex items-center gap-1.5">
             <span>Fueled by</span>
             <span aria-hidden>☕</span>

@@ -6,7 +6,7 @@ import { socials } from "@/data/content";
 import { cardSurface, cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Contact | Specter842",
+  title: "Contact | Phantom842",
 };
 
 export default function ContactPage() {

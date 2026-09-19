@@ -54,7 +54,7 @@ export const projects: Project[] = [
       "Implemented canary-token leak detection and a YAML-driven policy engine (allow/sanitize/challenge/block) with a real-time WebSocket incident console.",
     ],
     tech: ["Python", "FastAPI", "PostgreSQL", "React", "Kafka", "Docker", "YARA"],
-    github: "https://github.com/Specter842/Aegis",
+    github: "https://github.com/Phantom8420/Aegis",
     liveUrl: "https://aegis-frontend-dn3z.onrender.com",
     featured: true,
   },
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "Implemented role-based access control and a scalable patient identity system for secure inter-hospital coordination.",
     ],
     tech: ["TypeScript", "React", "REST APIs", "RBAC"],
-    github: "https://github.com/Specter842/UniHealth",
+    github: "https://github.com/Phantom8420/UniHealth",
     liveUrl: "https://uni-health-kappa.vercel.app",
     featured: true,
   },
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     description:
       "A hybrid blockchain platform for fighting counterfeit goods across the supply chain: manufacturers mint an NFT for each product, distributors log shipment checkpoints on-chain, and consumers scan a secure QR code to instantly verify a product's authenticity and full chain of custody.",
     tech: ["TypeScript", "Solidity", "Next.js"],
-    github: "https://github.com/Specter842/AuthenTick",
+    github: "https://github.com/Phantom8420/AuthenTick",
     featured: true,
   },
   {
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     description:
       "An Ethereum fraud-detection system that trains a Random Forest classifier on 10,000+ real transactions to flag suspicious wallet activity, then writes flagged events to a Solidity smart contract for tamper-proof, on-chain audit logging that can't be quietly edited after the fact.",
     tech: ["Python", "Jupyter Notebook", "Solidity", "JavaScript"],
-    github: "https://github.com/Specter842/ChainGuard",
+    github: "https://github.com/Phantom8420/ChainGuard",
   },
   {
     title: "Glasses: Personal Productivity OS",
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     description:
       "A personal productivity operating system built to replace a scattered stack of to-do apps and notebooks with one place for task management, planning, and day-to-day life organization — designed around how I actually work rather than a generic template.",
     tech: ["JavaScript", "TypeScript"],
-    github: "https://github.com/Specter842/Glasses",
+    github: "https://github.com/Phantom8420/Glasses",
   },
   {
     title: "Notes & Reminders",
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     description:
       "An open-source, lightweight note-taking app focused on getting out of your way: fast capture, minimal friction, and full control over how your notes are organized — built as a self-hostable alternative to heavier, bloated note-taking tools.",
     tech: ["Go", "TypeScript"],
-    github: "https://github.com/Specter842/Notes-and-Reminders",
+    github: "https://github.com/Phantom8420/Notes-and-Reminders",
   },
 ];
 
@@ -126,12 +126,12 @@ export const skillGroups: { label: string; items: string[] }[] = [
 ];
 
 export const socials = {
-  github: "https://github.com/Specter842",
-  behance: "https://behance.net/specter842",
-  discord: "@specter842",
+  github: "https://github.com/Phantom8420",
+  behance: "https://behance.net/phantom842",
+  discord: "@phantom842",
   discordUrl: "https://discord.com/users/985132611045322753",
-  email: "specterofficial842@gmail.com",
-  resumeEmail: "specterofficial842@gmail.com",
+  email: "phantom842x@gmail.com",
+  resumeEmail: "phantom842x@gmail.com",
 };
 
 export const certifications = [

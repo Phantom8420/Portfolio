@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Specter842",
+  title: "Phantom842",
   description:
     "Computational Systems Engineer — AI/ML, robotics, cybersecurity, finance, blockchain, IoT, and autonomous systems.",
 };

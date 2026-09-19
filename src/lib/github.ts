@@ -1,4 +1,4 @@
-const GITHUB_USERNAME = "Specter842";
+const GITHUB_USERNAME = "Phantom8420";
 
 const QUERY = `
   query($login: String!) {

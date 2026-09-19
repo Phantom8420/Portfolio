@@ -64,7 +64,7 @@ export function Nav() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-xl font-bold tracking-tight">
-          specter842
+          phantom842
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">
