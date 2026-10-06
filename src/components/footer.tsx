@@ -1,4 +1,4 @@
-import { GithubIcon, DiscordIcon, MailIcon } from "@/components/icons";
+import { GithubIcon, DiscordIcon, MailIcon, CoffeeIcon } from "@/components/icons";
 import { socials } from "@/data/content";
 
 export function Footer() {
@@ -36,7 +36,7 @@ export function Footer() {
           <p>© 2026 phantom842. All rights reserved.</p>
           <div className="flex items-center gap-1.5">
             <span>Fueled by</span>
-            <span aria-hidden>☕</span>
+            <CoffeeIcon className="size-5 text-accent" />
             <span>•</span>
             <span>
               Crafted in <span className="font-semibold text-accent">Next.js</span>

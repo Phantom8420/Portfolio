@@ -38,3 +38,23 @@ export function MoonIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+export function CoffeeIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 120 120"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path d="M36 38c-5-6-5-12 0-17M53 38c-5-6-5-12 0-17M70 38c-5-6-5-12 0-17" />
+      <path d="M22 50h62v30a18 18 0 0 1-18 18H40a18 18 0 0 1-18-18Z" />
+      <path d="M84 58h6a12 12 0 0 1 0 26h-6" />
+      <ellipse cx="53" cy="106" rx="40" ry="6" />
+    </svg>
+  );
+}
