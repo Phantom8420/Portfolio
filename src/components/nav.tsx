@@ -61,7 +61,7 @@ export function Nav() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-50 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-xl font-bold tracking-tight">
           phantom842
@@ -105,7 +105,7 @@ export function Nav() {
       </nav>
 
       {open && (
-        <div className="flex flex-col gap-1 border-t border-border/60 px-6 py-4 md:hidden">
+        <div className="flex flex-col gap-1 px-6 py-4 md:hidden">
           {links.map((l) => (
             <Link
               key={l.href}
