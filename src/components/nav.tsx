@@ -63,7 +63,7 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-2xl font-bold tracking-tight sm:text-3xl">
+        <Link href="/" className="text-xl font-bold tracking-tight">
           phantom842
         </Link>
 
