@@ -22,11 +22,7 @@ export default async function Home() {
 
   return (
     <main>
-      <section className="relative mx-auto grid max-w-5xl gap-10 overflow-hidden px-6 py-10 md:grid-cols-2 md:items-center md:py-20">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -top-32 -left-40 size-[28rem] rounded-full bg-accent/20 blur-[110px] dark:bg-accent/25"
-        />
+      <section className="mx-auto grid max-w-5xl gap-10 px-6 py-10 md:grid-cols-2 md:items-center md:py-20">
         <div className="min-w-0">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             <span className="bg-gradient-to-br from-foreground via-foreground to-accent bg-clip-text text-transparent">
