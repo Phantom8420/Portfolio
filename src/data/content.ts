@@ -46,7 +46,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Aegis: LLM Security Gateway",
-    badge: "Personal Project",
+    badge: "Hackathon Project",
     description:
       "A production-grade security firewall that sits in front of LLM applications, inspecting every prompt and response for adversarial inputs, prompt injection, and data leaks. Combines regex, YARA rules, and ML-based detection in a multi-stage pipeline, with a real-time operator console and a YAML-driven policy engine to allow, sanitize, challenge, or block traffic on the fly.",
     bullets: [
@@ -60,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     title: "UniHealth: Healthcare Interoperability Platform",
-    badge: "Personal Project",
+    badge: "Public Benefit Project",
     description:
       "A cloud-based platform that lets hospitals exchange patient data securely and in real time through a unified API layer, cutting through the fragmentation of siloed hospital record systems. Built with role-based access control and a scalable patient identity system so multiple institutions can coordinate care without compromising privacy.",
     bullets: [
@@ -74,16 +74,17 @@ export const projects: Project[] = [
   },
   {
     title: "AuthenTick: Blockchain Anti-Counterfeit Platform",
-    badge: "Personal Project",
+    badge: "Hackathon Project",
     description:
       "A hybrid blockchain platform for fighting counterfeit goods across the supply chain: manufacturers mint an NFT for each product, distributors log shipment checkpoints on-chain, and consumers scan a secure QR code to instantly verify a product's authenticity and full chain of custody.",
     tech: ["TypeScript", "Solidity", "Next.js"],
     github: "https://github.com/Phantom8420/AuthenTick",
+    liveUrl: "https://authen-tick-web.vercel.app",
     featured: true,
   },
   {
     title: "ChainGuard: Ethereum Fraud Detection",
-    badge: "Personal Project",
+    badge: "Hackathon Project",
     description:
       "An Ethereum fraud-detection system that trains a Random Forest classifier on 10,000+ real transactions to flag suspicious wallet activity, then writes flagged events to a Solidity smart contract for tamper-proof, on-chain audit logging that can't be quietly edited after the fact.",
     tech: ["Python", "Jupyter Notebook", "Solidity", "JavaScript"],

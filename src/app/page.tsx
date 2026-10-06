@@ -7,7 +7,7 @@ import { ProjectCard } from "@/components/project-card";
 import { SkillsSection } from "@/components/skills-section";
 import { ContactCta } from "@/components/contact-cta";
 import { projects, socials } from "@/data/content";
-import { pillSurface, cn } from "@/lib/utils";
+import { pillSurface, pillSurfacePrimary, cn } from "@/lib/utils";
 import { getWakaTimeWeekSummary } from "@/lib/wakatime";
 
 // This page fetches live stats -- force it to render fresh on every request
@@ -22,17 +22,18 @@ export default async function Home() {
 
   return (
     <main>
-      <section className="mx-auto grid max-w-5xl gap-10 px-6 py-10 md:grid-cols-2 md:items-center md:py-24">
+      <section className="relative mx-auto grid max-w-5xl gap-10 overflow-hidden px-6 py-10 md:grid-cols-2 md:items-center md:py-20">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -top-32 -left-40 size-[28rem] rounded-full bg-accent/20 blur-[110px] dark:bg-accent/25"
+        />
         <div className="min-w-0">
-          <h1 className="relative text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            <span
-              aria-hidden
-              className="pointer-events-none absolute -top-1 left-1 text-transparent [-webkit-text-stroke:1px_var(--border)] select-none"
-            >
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+            <span className="bg-gradient-to-br from-foreground via-foreground to-accent bg-clip-text text-transparent">
               phantom842
             </span>
-            <span className="relative">phantom842</span>
           </h1>
+          <p className="mt-2 font-mono text-sm text-accent">i build cool stuff (sometimes)</p>
           <p className="mt-4 max-w-md text-muted-foreground">
             Computational Systems Engineer — AI/ML, robotics, cybersecurity, finance, blockchain,
             IoT, and autonomous systems.
@@ -41,7 +42,7 @@ export default async function Home() {
           <div className="mt-6 flex flex-wrap gap-2">
             <Link
               href="/resume"
-              className={cn(pillSurface, "flex items-center gap-2 px-3.5 py-2.5 text-sm font-medium text-secondary-foreground hover:text-foreground")}
+              className={cn(pillSurfacePrimary, "flex items-center gap-2 px-3.5 py-2.5 text-sm font-medium")}
             >
               <FileText className="size-4" />
               Resume
@@ -84,7 +85,7 @@ export default async function Home() {
 
       <ExperienceSection />
 
-      <section className="mx-auto max-w-5xl px-6 py-10 sm:py-16">
+      <section className="mx-auto max-w-5xl px-6 py-10 sm:py-12">
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Featured Projects</h2>
         <p className="mt-2 text-muted-foreground">Some things I&apos;ve created</p>
 

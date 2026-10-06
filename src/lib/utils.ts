@@ -13,3 +13,7 @@ export const cardSurface =
 // Pill/button-like surfaces (social links, badges): one shade lighter than the page at rest.
 export const pillSurface =
   "rounded-lg border border-border-strong bg-card transition-all duration-200 hover:bg-border";
+
+// Primary pill: filled accent, for the one CTA that should outrank the rest (e.g. Resume).
+export const pillSurfacePrimary =
+  "rounded-lg bg-accent text-white shadow-lg shadow-accent/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--accent-color-dark)]";
