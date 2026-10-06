@@ -31,7 +31,16 @@ export function LiveClock({ codedToday, weekTotal, dailyAvg, languages }: LiveCl
 
   return (
     <div className="min-w-0 rounded-2xl border border-border bg-background p-5">
-      <p className="text-sm text-muted-foreground">{now ? greeting(now.getHours()) : ""}</p>
+      <div className="flex items-start justify-between gap-3">
+        <p className="text-sm text-muted-foreground">{now ? greeting(now.getHours()) : ""}</p>
+        <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-500">
+          <span className="relative flex size-1.5">
+            <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+            <span className="relative inline-flex size-1.5 rounded-full bg-emerald-500" />
+          </span>
+          Open to Work
+        </span>
+      </div>
       <p className="mt-1 font-mono text-2xl font-semibold">{time}</p>
       <p className="mt-3 text-xs text-muted-foreground">
         <span className="font-mono text-foreground">{codedToday ?? "—"}</span> coded today
