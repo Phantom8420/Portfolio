@@ -35,6 +35,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       >
         <body className="min-h-full flex flex-col">
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+            <div
+              aria-hidden
+              className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(60rem_40rem_at_15%_-5%,color-mix(in_oklab,var(--accent-color)_18%,transparent),transparent_70%)]"
+            />
             <SuppressViewTransitionErrors />
             <ScrollProgressBar />
             <Nav />
