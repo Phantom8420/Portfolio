@@ -43,18 +43,17 @@ export function CoffeeIcon({ className }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 120 120"
+      viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="6"
+      strokeWidth="1.4"
       strokeLinecap="round"
-      strokeLinejoin="round"
       className={className}
     >
-      <path d="M36 38c-5-6-5-12 0-17M53 38c-5-6-5-12 0-17M70 38c-5-6-5-12 0-17" />
-      <path d="M22 50h62v30a18 18 0 0 1-18 18H40a18 18 0 0 1-18-18Z" />
-      <path d="M84 58h6a12 12 0 0 1 0 26h-6" />
-      <ellipse cx="53" cy="106" rx="40" ry="6" />
+      <path d="M8 1c.8 1.5-.8 2.5 0 4M12 0c.8 1.5-.8 3 0 5M16 1c.8 1.5-.8 2.5 0 4" strokeWidth="1" />
+      <path d="M5 8H15V18C15 19.1 14.1 20 13 20H7C5.9 20 5 19.1 5 18V8Z" />
+      <path d="M15 10H17C18.1 10 19 10.9 19 12C19 13.1 18.1 14 17 14H15" />
+      <ellipse cx="10" cy="21.5" rx="6" ry="1" strokeWidth="1" />
     </svg>
   );
 }

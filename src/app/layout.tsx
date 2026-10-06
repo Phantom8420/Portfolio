@@ -1,3 +1,4 @@
+import { CoffeeMug } from "@/components/coffee-mug";
 import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <ScrollProgressBar />
             <Nav />
             {children}
+            <CoffeeMug />
             <Footer />
             <ScrollToTop />
           </ThemeProvider>

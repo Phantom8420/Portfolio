@@ -220,3 +220,38 @@ html.theme-transitioning::view-transition-new(root) {
 .chart-hover-group .chart-hover-item:hover {
   filter: brightness(1.35);
 }
+
+:root {
+  --mug-1: #8b4513;
+  --mug-2: sienna;
+  --mug-3: #6b3e26;
+  --mug-coffee-1: #3e2723;
+  --mug-coffee-2: #4e342e;
+  --mug-steam-1: wheat;
+  --mug-steam-2: #ffefd5;
+  --mug-glow: drop-shadow(0 0 25px #b4783c66);
+}
+
+@keyframes mug-float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-13px) rotate(3deg); }
+}
+
+@keyframes steam-sway {
+  0%, 100% { transform: translateY(0); opacity: 0.55; }
+  50% { transform: translateY(-1.6px); opacity: 1; }
+}
+
+@keyframes steam-particle {
+  0% { transform: translate(0, 0) scale(0.3); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translate(12px, -80px) scale(1); opacity: 0; }
+}
+
+.mug-float { animation: mug-float 6s ease-in-out infinite; }
+.steam-sway { animation: steam-sway 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+.steam-particle { animation: steam-particle 5s ease-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mug-float, .steam-sway, .steam-particle { animation: none; }
+}

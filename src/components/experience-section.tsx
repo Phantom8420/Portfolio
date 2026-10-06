@@ -1,16 +1,14 @@
 import { experiences } from "@/data/content";
-import { CoffeeIcon } from "@/components/icons";
 import { TechBadge } from "@/components/tech-badge";
 import { cardSurface, cn } from "@/lib/utils";
 
 export function ExperienceSection() {
   return (
-    <section className="relative mx-auto max-w-5xl px-6 py-10 sm:py-12">
-      <CoffeeIcon className="pointer-events-none absolute top-24 right-0 hidden size-72 text-accent/10 lg:block" />
+    <section className="mx-auto max-w-5xl px-6 py-10 sm:py-12">
       <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Experience</h2>
       <p className="mt-2 text-muted-foreground">Where I&apos;ve worked and what I&apos;ve built</p>
 
-      <div className="relative mt-8 space-y-6">
+      <div className="mt-8 space-y-6">
         {experiences.map((exp) => (
           <div key={exp.company} className={cn(cardSurface, "p-6")}>
             <div className="flex flex-wrap items-baseline justify-between gap-2">
