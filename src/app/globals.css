@@ -14,9 +14,9 @@
   --secondary-foreground: oklch(14.5% 0 0);
   --muted: oklch(85% 0 0);
   --muted-foreground: oklch(45% 0 0);
-  --accent-color: #b45309;
-  --accent-color-light: #d97706;
-  --accent-color-dark: #92400e;
+  --accent-color: #92400e;
+  --accent-color-light: #b45309;
+  --accent-color-dark: #78350f;
   --accent: var(--accent-color);
   --accent-foreground: oklch(98.5% 0 0);
   --destructive: oklch(39.6% .141 25.723);
@@ -41,6 +41,9 @@
   --secondary-foreground: oklch(98.5% 0 0);
   --muted: oklch(40% 0 0);
   --muted-foreground: oklch(70% 0 0);
+  --accent-color: #b45309;
+  --accent-color-light: #d97706;
+  --accent-color-dark: #92400e;
   --accent: var(--accent-color);
   --accent-foreground: oklch(98.5% 0 0);
   --destructive: oklch(39.6% .141 25.723);
