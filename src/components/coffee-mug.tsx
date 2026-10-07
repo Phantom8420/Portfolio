@@ -7,10 +7,10 @@ const steam = [
 ];
 
 const particles = [
-  "top-20 left-24 size-3 bg-indigo-500/25 dark:bg-indigo-300/40",
-  "top-24 left-32 size-4 bg-violet-400/20 dark:bg-violet-200/30",
+  "top-20 left-24 size-3 bg-amber-500/25 dark:bg-amber-300/40",
+  "top-24 left-32 size-4 bg-orange-400/20 dark:bg-orange-200/30",
   "top-16 left-28 size-2 bg-yellow-500/20 dark:bg-yellow-200/35",
-  "top-28 left-20 size-3 bg-indigo-600/20 dark:bg-indigo-400/25",
+  "top-28 left-20 size-3 bg-amber-600/20 dark:bg-amber-400/25",
 ];
 
 export function CoffeeMug() {

@@ -14,9 +14,9 @@
   --secondary-foreground: oklch(14.5% 0 0);
   --muted: oklch(85% 0 0);
   --muted-foreground: oklch(45% 0 0);
-  --accent-color: #4f46e5;
-  --accent-color-light: #6366f1;
-  --accent-color-dark: #4338ca;
+  --accent-color: #b45309;
+  --accent-color-light: #d97706;
+  --accent-color-dark: #92400e;
   --accent: var(--accent-color);
   --accent-foreground: oklch(98.5% 0 0);
   --destructive: oklch(39.6% .141 25.723);
@@ -29,9 +29,6 @@
 }
 
 .dark {
-  --accent-color: #818cf8;
-  --accent-color-light: #a5b4fc;
-  --accent-color-dark: #6366f1;
   --background: oklch(0% 0 0);
   --foreground: oklch(98.5% 0 0);
   --card: oklch(14.5% 0 0);
@@ -232,7 +229,7 @@ html.theme-transitioning::view-transition-new(root) {
   --mug-coffee-2: #4e342e;
   --mug-steam-1: wheat;
   --mug-steam-2: #ffefd5;
-  --mug-glow: drop-shadow(0 0 25px #818cf855);
+  --mug-glow: drop-shadow(0 0 25px #b4783c66);
 }
 
 @keyframes mug-float {
