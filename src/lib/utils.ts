@@ -16,4 +16,4 @@ export const pillSurface =
 
 // Primary pill: filled accent, for the one CTA that should outrank the rest (e.g. Resume).
 export const pillSurfacePrimary =
-  "rounded-lg bg-accent text-white shadow-lg shadow-accent/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--accent-color-dark)]";
+  "rounded-lg bg-foreground text-background shadow-lg shadow-foreground/10 transition-all duration-200 hover:-translate-y-0.5 hover:bg-foreground/90";
