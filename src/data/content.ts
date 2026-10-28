@@ -91,12 +91,47 @@ export const projects: Project[] = [
     github: "https://github.com/Phantom8420/ChainGuard",
   },
   {
-    title: "Glasses: Personal Productivity OS",
+    title: "Glasses: Offline College Life Manager",
     badge: "Personal Project",
     description:
-      "A personal productivity operating system built to replace a scattered stack of to-do apps and notebooks with one place for task management, planning, and day-to-day life organization — designed around how I actually work rather than a generic template.",
-    tech: ["JavaScript", "TypeScript"],
+      "A local-first Android app with no accounts, no cloud and no permissions: timetable, per-course attendance with miss-budget gauges, habits, to-dos, money tracking and learning, all stored on the device.",
+    tech: ["JavaScript", "Android"],
     github: "https://github.com/Phantom8420/Glasses",
+  },
+  {
+    title: "Engram: Company Brain for Open-Source Projects",
+    badge: "Hackathon Project",
+    description:
+      "A temporal knowledge graph built from thousands of merged pull requests that shows who actually knows a module, why the code is the way it is, and how much unwritten knowledge walks out when a maintainer leaves. Forks the graph to run what-if scenarios, such as a contributor stepping away or a decision being reversed.",
+    tech: ["Python", "FalkorDB", "Graph Queries"],
+    github: "https://github.com/Phantom8420/engram",
+    liveUrl: "https://graph-hacks-pearl.vercel.app",
+  },
+  {
+    title: "TSUKUMO: Tacit-Skill Capture and Coaching",
+    badge: "Hackathon Project",
+    description:
+      "A phone watches an expert's hands (or rides on the tool), finds the moments no manual explains, asks the expert why, and turns each answer into a card that coaches apprentices at the same point in the work. Hand tracking runs in the browser; the pipeline is craft-agnostic.",
+    tech: ["Python", "MediaPipe", "Web Sensors"],
+    github: "https://github.com/Phantom8420/tsukumo",
+    liveUrl: "https://tsukumo-xi.vercel.app",
+  },
+  {
+    title: "Lookahead: Streaming Live RAG",
+    badge: "Hackathon Project",
+    description:
+      "An event-driven RAG engine for live voice and chat that starts retrieval before the user finishes speaking, splits compound requests into parallel sub-queries, and patches individual claims when a late constraint arrives instead of restarting. Citation fabrication is structurally impossible, and every decision is traced as JSON.",
+    tech: ["Python", "RAG", "Embeddings"],
+    github: "https://github.com/Phantom8420/Live-Rag-Streaming",
+  },
+  {
+    title: "Hole: Graph-Based Job Search Platform",
+    badge: "Personal Project",
+    description:
+      "Career history stored as a queryable graph, with resumes generated from it. Code deterministically selects which positions, bullets and skills appear; the model only writes the phrasing, and a skill with no evidence cannot be claimed.",
+    tech: ["Python", "Graph DB", "LLMs"],
+    github: "https://github.com/Phantom8420/Hole",
+    liveUrl: "https://hole-roan.vercel.app",
   },
   {
     title: "Notes & Reminders",
