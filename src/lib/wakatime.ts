@@ -38,18 +38,18 @@ function toDateString(d: Date): string {
 // never appear larger than the week total, since it's derived from the same
 // snapshot rather than two separately-cached endpoints drifting apart.
 export async function getWakaTimeWeekSummary(): Promise<WakaTimeStats | null> {
-  const apiKey = process.env.WAKATIME_API_KEY;
-  if (!apiKey) return null;
+  // WakaTime no longer accepts a plain API key here; this is an OAuth access token.
+  const token = process.env.WAKATIME_ACCESS_TOKEN;
+  if (!token) return null;
 
   try {
     const end = new Date();
     const start = new Date(end);
     start.setDate(start.getDate() - 6);
 
-    const auth = Buffer.from(`${apiKey}:`).toString("base64");
     const url = `https://wakatime.com/api/v1/users/current/summaries?start=${toDateString(start)}&end=${toDateString(end)}`;
     const res = await fetch(url, {
-      headers: { Authorization: `Basic ${auth}` },
+      headers: { Authorization: `Bearer ${token}` },
       next: { revalidate: 300 },
     });
 
