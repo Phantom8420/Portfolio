@@ -21,16 +21,6 @@ export const experiences: Experience[] = [
     tech: ["Django", "Go", "React Native", "AWS SQS", "Razorpay"],
   },
   {
-    company: "Thapar Institute of Engineering & Technology",
-    role: "Research Intern",
-    period: "05/2026 - 07/2026",
-    bullets: [
-      "Designed the Universal Brain Board, a universal PCB built to be compatible with every robotics project, so one controller board is reused across builds instead of being redesigned for each one.",
-      "Worked on-site at the Patiala campus as part of the robotics research group on the board's design.",
-    ],
-    tech: ["PCB Design", "Robotics", "Embedded Systems"],
-  },
-  {
     company: "Adobe Inc.",
     role: "Project Intern",
     period: "08/2023 - 11/2023",

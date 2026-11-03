@@ -17,16 +17,6 @@ export const resumeExperience = [
     ],
   },
   {
-    company: "Thapar Institute of Engineering & Technology",
-    role: "Research Intern",
-    location: "Patiala, Punjab, India",
-    period: "05/2026 - 07/2026",
-    bullets: [
-      "Designed the Universal Brain Board, a universal PCB built to be compatible with every robotics project, so one controller board is reused across builds instead of being redesigned for each one.",
-      "Worked on-site at the Patiala campus as part of the robotics research group on the board's design.",
-    ],
-  },
-  {
     company: "Adobe Inc.",
     role: "Project Intern",
     location: "Greater Noida, UP, India",
