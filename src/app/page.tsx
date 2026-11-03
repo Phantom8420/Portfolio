@@ -1,6 +1,6 @@
 import { Link } from "next-view-transitions";
 import { FileText } from "lucide-react";
-import { GithubIcon, MailIcon, DiscordIcon } from "@/components/icons";
+import { GithubIcon, MailIcon, BehanceIcon } from "@/components/icons";
 import { LiveClock } from "@/components/live-clock";
 import { ExperienceSection } from "@/components/experience-section";
 import { ProjectCard } from "@/components/project-card";
@@ -60,13 +60,13 @@ export default async function Home() {
               Email
             </a>
             <a
-              href={socials.discordUrl}
+              href={socials.behance}
               target="_blank"
               rel="noreferrer"
               className={cn(pillSurface, "flex items-center gap-2 px-3.5 py-2.5 text-sm font-medium text-secondary-foreground hover:text-foreground")}
             >
-              <DiscordIcon className="size-4" />
-              Discord
+              <BehanceIcon className="size-4" />
+              Behance
             </a>
           </div>
         </div>

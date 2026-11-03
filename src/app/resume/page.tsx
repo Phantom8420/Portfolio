@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GithubIcon, DiscordIcon } from "@/components/icons";
+import { GithubIcon, DiscordIcon, BehanceIcon } from "@/components/icons";
 import { socials } from "@/data/content";
 import {
   resumeProfile,
@@ -32,6 +32,14 @@ export default function ResumePage() {
               className="flex items-center gap-1 hover:text-foreground"
             >
               <GithubIcon className="size-3.5" /> GitHub
+            </a>
+            <a
+              href={socials.behance}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1 hover:text-foreground"
+            >
+              <BehanceIcon className="size-3.5" /> Behance
             </a>
             <a
               href={socials.discordUrl}

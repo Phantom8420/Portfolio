@@ -1,4 +1,4 @@
-import { GithubIcon, DiscordIcon, MailIcon, CoffeeIcon } from "@/components/icons";
+import { BehanceIcon, GithubIcon, DiscordIcon, MailIcon, CoffeeIcon } from "@/components/icons";
 import { socials } from "@/data/content";
 
 export function Footer() {
@@ -14,6 +14,15 @@ export function Footer() {
             className="rounded-full bg-secondary/50 p-2.5 text-muted-foreground transition-colors hover:bg-border-strong hover:text-accent"
           >
             <GithubIcon className="size-4" />
+          </a>
+          <a
+            href={socials.behance}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Behance"
+            className="rounded-full bg-secondary/50 p-2.5 text-muted-foreground transition-colors hover:bg-border-strong hover:text-accent"
+          >
+            <BehanceIcon className="size-4" />
           </a>
           <a
             href={socials.discordUrl}
