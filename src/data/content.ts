@@ -163,7 +163,7 @@ export const skillGroups: { label: string; items: string[] }[] = [
 
 export const socials = {
   github: "https://github.com/Phantom8420",
-  behance: "https://behance.net/phantom842",
+  behance: "https://www.behance.net/10932e09",
   discord: "@842phantom",
   discordUrl: "https://discord.com/users/985132611045322753",
   email: "phantom842x@gmail.com",
