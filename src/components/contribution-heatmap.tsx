@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const GITHUB_COLOR = "var(--accent-color)";
@@ -37,6 +40,8 @@ export function ContributionHeatmap({
   leetcodeCalendar: Record<string, number>;
   showLeetCode?: boolean;
 }) {
+  const [hovered, setHovered] = useState<{ date: string; count: number } | null>(null);
+
   if (githubCalendar.length === 0) return null;
 
   // githubCalendar arrives flat and already in Sunday-first weekly order from
@@ -76,6 +81,8 @@ export function ContributionHeatmap({
                       ? `${day.date}: ${day.count} GitHub contribution${day.count === 1 ? "" : "s"}, ${leetcodeCount} LeetCode submission${leetcodeCount === 1 ? "" : "s"}`
                       : `${day.date}: ${day.count} GitHub contribution${day.count === 1 ? "" : "s"}`
                   }
+                  onMouseEnter={() => setHovered(day)}
+                  onMouseLeave={() => setHovered(null)}
                   className="contrib-cell size-[11px] rounded-[2px]"
                   style={{ background: cellBackground(day.count, leetcodeCount) }}
                 />
@@ -87,9 +94,18 @@ export function ContributionHeatmap({
 
       {!showLeetCode && (
         <p className="mt-3 text-xs text-muted-foreground">
-          <span className="font-semibold text-foreground">{total}</span> contributions in the last {weeks.length} weeks
-          {" · "}
-          <span className="font-semibold text-foreground">{latest?.count ?? 0}</span> on {latest?.date}
+          {hovered ? (
+            <>
+              <span className="font-semibold text-foreground">{hovered.count}</span> contribution
+              {hovered.count === 1 ? "" : "s"} on {hovered.date}
+            </>
+          ) : (
+            <>
+              <span className="font-semibold text-foreground">{total}</span> contributions in the last {weeks.length} weeks
+              {" · "}
+              <span className="font-semibold text-foreground">{latest?.count ?? 0}</span> on {latest?.date}
+            </>
+          )}
         </p>
       )}
 
