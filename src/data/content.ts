@@ -13,10 +13,10 @@ export const experiences: Experience[] = [
     role: "Software Engineer",
     period: "02/2026 - Present",
     bullets: [
-      "Engineered Fooddle from zero to production: a Django REST backend and Expo/React Native apps for customers and vendors, now serving 15,000+ users every day with average transactions worth about US$12K.",
-      "Commanded the money layer end to end: Razorpay payments with tax and TCS calculation, a platform-fee waiver threshold, per-shop bank accounts and a payment ledger that reconciles every rupee.",
-      "Built a Go worker on AWS SQS that takes bill PDFs, vendor payout sheets, the mail queue, catalog sync and payment reconciliation off the request path, so checkout stays fast under load.",
-      "Added guest login, helper users and external-shop support, then attacked my own production stack: a security review plus load tests that held p95 latency near 700 ms at 100 concurrent users with a 0.03% error rate, and mapped the breaking point at 4,000-6,000.",
+      "Took Fooddle from a blank repository to a live platform serving 15,000+ users every day, with about US$12K in average transaction value, on a Django REST backend and Expo/React Native apps for customers and vendors.",
+      "Owned the entire money path: Razorpay payments with tax and TCS calculation, a platform-fee waiver threshold and per-shop bank accounts, backed by a ledger that reconciles every single transaction.",
+      "Built a Go worker on AWS SQS that moves bill PDFs, vendor payout sheets, mail, catalog sync and payment reconciliation off the request path, keeping checkout fast while thousands of orders flow through.",
+      "Then attacked my own production stack: a security review and a 47,052-request load test over 17 minutes held p95 latency at 709 ms with a 0.03% error rate at 100 concurrent users, and the breaking point sits at 4,000-6,000.",
     ],
     tech: ["Django", "Go", "React Native", "AWS SQS", "Razorpay"],
   },
@@ -60,10 +60,10 @@ export const projects: Project[] = [
     title: "Aegis: LLM Security Gateway",
     badge: "Hackathon Project",
     description:
-      "A production-grade security firewall that sits in front of LLM applications, inspecting every prompt and response for adversarial inputs, prompt injection, and data leaks. Combines regex, YARA rules, and ML-based detection in a multi-stage pipeline, with a real-time operator console and a YAML-driven policy engine to allow, sanitize, challenge, or block traffic on the fly.",
+      "A security firewall in front of LLM applications that inspects every prompt and response for prompt injection, encoded payloads and data leaks. Eight detectors run in three tiers (unicode and encoding pre-processing, regex and YARA rules, ML classifiers), and a YAML policy engine decides to allow, sanitize, challenge or block in real time. Ships with a live operator console, a feedback loop for true/false positives, and benchmarks reporting precision, recall, F1 and false-positive rate.",
     bullets: [
-      "Built a bidirectional security gateway that scans LLM prompts and responses in real time, combining regex, YARA rules, and ML models in a multi-stage detection pipeline.",
-      "Implemented canary-token leak detection and a YAML-driven policy engine (allow/sanitize/challenge/block), with Kafka-backed event streaming, Docker deployment and a real-time WebSocket incident console.",
+      "Built a bidirectional LLM security gateway that screens every prompt and response through 8 detectors across 3 tiers (unicode and encoding pre-processing, regex and YARA rules, ML classifiers), mapped to OWASP LLM Top 10 risks.",
+      "Added canary-token leak detection and a YAML policy engine (allow/sanitize/challenge/block), with Kafka event streaming, Docker deployment, a WebSocket incident console and precision/recall/F1 benchmarks on labelled attack and benign sets.",
     ],
     tech: ["Python", "FastAPI", "PostgreSQL", "React", "Kafka", "Docker", "YARA"],
     github: "https://github.com/Phantom8420/Aegis",
