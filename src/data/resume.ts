@@ -29,11 +29,11 @@ export const resumeExperience = [
   {
     company: "Adobe Inc.",
     role: "Project Intern",
-    location: "Greater Noida, UP, India",
+    location: "India",
     period: "08/2023 - 11/2023",
     bullets: [
-      "Completed project-based training on Adobe Express and industry-standard creative workflows.",
-      "Collaborated on team projects, strengthening communication, feedback handling and adaptability in a professional setting.",
+      "Completed a project-based work experience program focused on Adobe Express and industry-standard creative workflows.",
+      "Collaborated with a 4-member team to develop 5 projects and deliver 10 creative deliverables, incorporating feedback and iterative design improvements.",
     ],
   },
 ];
