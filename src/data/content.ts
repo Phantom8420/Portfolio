@@ -9,6 +9,24 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    company: "Fooddle",
+    role: "Software Engineer",
+    period: "02/2026 - Present",
+    bullets: [
+      "Building a food-ordering platform with a Django REST backend and Expo/React Native customer and vendor apps.",
+    ],
+    tech: ["Django", "React Native", "AWS"],
+  },
+  {
+    company: "Thapar Institute of Engineering & Technology",
+    role: "Research Intern",
+    period: "05/2026 - 07/2026",
+    bullets: [
+      "On-site research internship in robotics at the Patiala campus.",
+    ],
+    tech: ["Robotics"],
+  },
+  {
     company: "buildspace",
     role: "Nights and Weekends Programme",
     period: "05/2024 - 08/2024",
