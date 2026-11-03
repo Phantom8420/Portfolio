@@ -21,6 +21,16 @@ export const experiences: Experience[] = [
     tech: ["Django", "Go", "React Native", "AWS SQS", "Razorpay"],
   },
   {
+    company: "buildspace",
+    role: "Nights and Weekends Programme",
+    period: "05/2024 - 08/2024",
+    bullets: [
+      "Developed an acoustic fire suppression project exploring sound-based fire control, collaborating with a global builder community to iterate on the concept.",
+    ],
+    tech: ["Hardware Prototyping", "Acoustics", "Product Iteration"],
+    link: { label: "buildspace.so", href: "https://buildspace.so" },
+  },
+  {
     company: "Adobe Inc.",
     role: "Project Intern",
     period: "08/2023 - 11/2023",
