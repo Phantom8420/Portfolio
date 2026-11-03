@@ -5,15 +5,6 @@ export const resumeProfile = {
 
 export const resumeExperience = [
   {
-    company: "buildspace",
-    role: "buildspace - Nights and Weekends Programme",
-    location: "Remote",
-    period: "05/2024 - 08/2024",
-    bullets: [
-      "Developed an acoustic fire suppression project exploring sound-based fire control, collaborating with a global builder community to iterate on the concept.",
-    ],
-  },
-  {
     company: "Adobe Inc.",
     role: "Project Intern",
     period: "08/2023 - 11/2023",

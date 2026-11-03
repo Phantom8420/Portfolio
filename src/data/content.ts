@@ -13,28 +13,22 @@ export const experiences: Experience[] = [
     role: "Software Engineer",
     period: "02/2026 - Present",
     bullets: [
-      "Building a food-ordering platform with a Django REST backend and Expo/React Native customer and vendor apps.",
+      "Built the Fooddle food-ordering platform from the ground up: a Django REST backend plus Expo/React Native apps for customers and vendors.",
+      "Implemented Razorpay payments with tax and TCS calculation, a platform-fee waiver threshold, per-shop bank accounts and a payment ledger for reconciliation.",
+      "Built a Go worker on AWS SQS that handles bill PDFs, vendor payout sheets, the mail queue, catalog sync and payment reconciliation outside the request path.",
+      "Added guest login, helper users and external-shop support, and ran security and load tests against the production stack.",
     ],
-    tech: ["Django", "React Native", "AWS"],
+    tech: ["Django", "Go", "React Native", "AWS SQS", "Razorpay"],
   },
   {
     company: "Thapar Institute of Engineering & Technology",
     role: "Research Intern",
     period: "05/2026 - 07/2026",
     bullets: [
-      "On-site research internship in robotics at the Patiala campus.",
+      "Designed the Universal Brain Board, a universal PCB built to be compatible with every robotics project, so one controller board can be reused across builds instead of redesigning per project.",
+      "On-site robotics research internship at the Patiala campus.",
     ],
-    tech: ["Robotics"],
-  },
-  {
-    company: "buildspace",
-    role: "Nights and Weekends Programme",
-    period: "05/2024 - 08/2024",
-    bullets: [
-      "Developed an acoustic fire suppression project exploring sound-based fire control, collaborating with a global builder community to iterate on the concept.",
-    ],
-    tech: ["Hardware Prototyping", "Acoustics", "Product Iteration"],
-    link: { label: "buildspace.so", href: "https://buildspace.so" },
+    tech: ["PCB Design", "Robotics", "Embedded Systems"],
   },
   {
     company: "Adobe Inc.",
