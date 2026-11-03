@@ -50,11 +50,14 @@ export function ContributionHeatmap({
   const weeks = allWeeks.slice(-30);
   // Phone-width cards can't fit 30 weeks -- only the most recent 12 stay
   // visible below the sm breakpoint, older columns hide instead of scrolling.
+  const days = weeks.flat();
+  const total = days.reduce((n, d) => n + d.count, 0);
+  const latest = days[days.length - 1];
   const mobileVisibleFrom = weeks.length - 12;
 
   return (
     <div>
-      <div className="chart-hover-group flex gap-[3px]">
+      <div className="flex gap-[3px]">
         {weeks.map((week, i) => (
           <div
             key={i}
@@ -73,7 +76,7 @@ export function ContributionHeatmap({
                       ? `${day.date}: ${day.count} GitHub contribution${day.count === 1 ? "" : "s"}, ${leetcodeCount} LeetCode submission${leetcodeCount === 1 ? "" : "s"}`
                       : `${day.date}: ${day.count} GitHub contribution${day.count === 1 ? "" : "s"}`
                   }
-                  className="chart-hover-item size-[11px] rounded-[2px]"
+                  className="contrib-cell size-[11px] rounded-[2px]"
                   style={{ background: cellBackground(day.count, leetcodeCount) }}
                 />
               );
@@ -81,6 +84,14 @@ export function ContributionHeatmap({
           </div>
         ))}
       </div>
+
+      {!showLeetCode && (
+        <p className="mt-3 text-xs text-muted-foreground">
+          <span className="font-semibold text-foreground">{total}</span> contributions in the last {weeks.length} weeks
+          {" · "}
+          <span className="font-semibold text-foreground">{latest?.count ?? 0}</span> on {latest?.date}
+        </p>
+      )}
 
       {showLeetCode && (
         <div className="mt-3 flex flex-wrap items-center gap-4 text-xs text-muted-foreground">

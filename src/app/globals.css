@@ -224,6 +224,23 @@ html.theme-transitioning::view-transition-new(root) {
   filter: brightness(1.35);
 }
 
+/* Heatmap hover: the hovered cell grows; the rest stay put. */
+.contrib-cell {
+  transition: transform 120ms;
+}
+
+.contrib-cell:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contrib-cell:hover {
+    transform: none;
+  }
+}
+
 :root {
   --mug-1: #8b4513;
   --mug-2: sienna;
