@@ -29,7 +29,6 @@ export const resumeExperience = [
   {
     company: "Adobe Inc.",
     role: "Project Intern",
-    location: "India",
     period: "08/2023 - 11/2023",
     bullets: [
       "Completed a project-based work experience program focused on Adobe Express and industry-standard creative workflows.",
