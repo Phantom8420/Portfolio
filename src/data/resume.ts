@@ -5,22 +5,22 @@ export const resumeProfile = {
 
 export const resumeExperience = [
   {
-    company: "buildspace",
-    role: "buildspace - Nights and Weekends Programme",
-    location: "Remote",
-    period: "05/2024 - 08/2024",
-    bullets: [
-      "Developed an acoustic fire suppression project exploring sound-based fire control, collaborating with a global builder community to iterate on the concept.",
-      "Design targets: 30-100 Hz at 100-120 dB, 10-30 cm range, 5-15 s suppression time, 20-30 test trials and a 60-80% target success rate on a small controlled flame.",
-    ],
-  },
-  {
     company: "Adobe Inc.",
     role: "Project Intern",
-    period: "08/2023 - 11/2023",
+    period: "4 months",
     bullets: [
       "Completed a project-based work experience program focused on Adobe Express and industry-standard creative workflows.",
       "Collaborated with a 4-member team to develop 5 projects and deliver 10 creative deliverables, incorporating feedback and iterative design improvements.",
+    ],
+  },
+  {
+    company: "buildspace",
+    role: "buildspace - Nights and Weekends Programme",
+    location: "Remote",
+    period: "4 months",
+    bullets: [
+      "Developed an acoustic fire suppression project exploring sound-based fire control, collaborating with a global builder community to iterate on the concept.",
+      "Design targets: 30-100 Hz at 100-120 dB, 10-30 cm range, 5-15 s suppression time, 20-30 test trials and a 60-80% target success rate on a small controlled flame.",
     ],
   },
 ];
