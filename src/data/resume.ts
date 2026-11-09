@@ -5,18 +5,6 @@ export const resumeProfile = {
 
 export const resumeExperience = [
   {
-    company: "Fooddle",
-    role: "Software Engineer",
-    location: "Remote",
-    period: "02/2026 - Present",
-    bullets: [
-      "Took Fooddle from a blank repository to a live platform serving 15,000+ users every day, with about US$12K in average transaction value, on a Django REST backend and Expo/React Native apps for customers and vendors.",
-      "Owned the entire money path: Razorpay payments with tax and TCS calculation, a platform-fee waiver threshold and per-shop bank accounts, backed by a ledger that reconciles every single transaction.",
-      "Built a Go worker on AWS SQS that moves bill PDFs, vendor payout sheets, mail, catalog sync and payment reconciliation off the request path, keeping checkout fast while thousands of orders flow through.",
-      "Then attacked my own production stack: a security review and a 47,052-request load test over 17 minutes held p95 latency at 709 ms with a 0.03% error rate at 100 concurrent users, and the breaking point sits at 4,000-6,000.",
-    ],
-  },
-  {
     company: "buildspace",
     role: "buildspace - Nights and Weekends Programme",
     location: "Remote",
