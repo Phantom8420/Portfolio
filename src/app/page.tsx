@@ -31,8 +31,8 @@ export default async function Home() {
           </h1>
           <p className="mt-2 font-mono text-sm text-accent">i build cool stuff (sometimes)</p>
           <p className="mt-4 max-w-md text-muted-foreground">
-            Computational Systems Engineer — AI/ML, robotics, cybersecurity, finance, blockchain,
-            IoT, and autonomous systems.
+            Computational Systems Engineer building real-time mobile and connected systems: Android
+            apps, phone-sensor pipelines, streaming APIs, IoT and secure backends.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
